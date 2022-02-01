@@ -10,7 +10,7 @@ import { sports } from './sports.js';
 import { renderSports } from './utils.js';
 
 import { cars } from './cars.js';
-import { renderCars } from './utils.js';
+import { renderCar } from './utils.js';
 
 
 const dogList = document.getElementById('dog');
@@ -44,6 +44,7 @@ for (let sport of sports) {
 }
 
 for (let car of cars) {
-    const div = renderCars(car);
+    const div = renderCar(car);
     carList.append(div);
 }
+

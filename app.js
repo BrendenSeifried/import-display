@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
-import { dogs } from './animals.js';
-import { renderDogs } from './utils.js';
+import { animal } from './animals.js';
+import { renderAnimal } from './utils.js';
 //console.log(dogs);
 
 import { planes } from './planes.js';
@@ -13,15 +13,26 @@ import { cars } from './cars.js';
 import { renderCar } from './utils.js';
 
 
-const dogList = document.getElementById('dog');
+const animalList = document.getElementById('animals');
 
-
-
-for (let dog of dogs) {
-    const div = renderDogs(dog);
-    dogList.append(div);
+function renderAnimals() {
+    for (let item of animal){
+        const div = renderAnimal(item);
+        animalList.append(div);
+    }
 }
-// let state
+
+renderAnimals();
+
+
+
+// for (let dog of dogs) {
+//     const div = renderDogs(dog);
+//     dogList.append(div);
+// }
+// // let state
+
+
 
 // set event listeners 
   // get user input
@@ -30,7 +41,7 @@ for (let dog of dogs) {
 const planeList = document.getElementById('plane');
 
   
-for (let plane of planes) {
+for (let plane of planes){ 
     const div = renderPlanes(plane);
     planeList.append(div);
 }

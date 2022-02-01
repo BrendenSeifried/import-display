@@ -1,4 +1,4 @@
-export const dogs = [
+export const animal = [
     {
         type: 'beagle',
         color: 'brown',

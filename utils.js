@@ -1,4 +1,4 @@
-export function renderDogs(dog) {
+export function renderAnimal(dog) {
     const div = document.createElement('div');
     div.classList.add('dog');
 
@@ -66,12 +66,12 @@ export function renderCar(car) {
     // }
 
     const p = document.createElement('p');
-    p.textContent = car.type;
+    p.textContent = car.make;
 
     const img = document.createElement('img');
     img.src = `./assets/${car.image}`;
    
-    div.append(h2, p);
+    div.append(h2, p, img);
     return div;
     
 }

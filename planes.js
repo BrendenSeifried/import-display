@@ -8,5 +8,25 @@ export const planes = [
         }   
        
     }, 
+
+    {
+        type: 'prop',
+        stats: {
+            size: 'small',
+            speed: 7,
+            image: 'plane2.png'
+        }   
+       
+    }, 
+
+    {
+        type: 'jet',
+        stats: {
+            size: 'medium',
+            speed: 10,
+            image: 'plane3.png'
+        }   
+       
+    }, 
     
 ];

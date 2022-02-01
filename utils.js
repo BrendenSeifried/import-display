@@ -42,20 +42,14 @@ export function renderSports(sport) {
     const div = document.createElement('div');
     div.classList.add('sport');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = sport.type.toUpperCase();
-    div.append(h2);
-    //image
-    const img = document.createElement('img');
-    img.src = `./assets/${sport.image}`;
-   
-
-    //p
     const p = document.createElement('p');
-    p.textContent = `${sport.type} is played with ${sport.players} players and its injury risk is  ${sport.injury}`;
-    div.append(h2, img, p);
+    p.textContent = `${sport}`;
+    div.append(p);
     return div;
+    
 }
+
+
 
 
 // export function renderPlanes(plane) {

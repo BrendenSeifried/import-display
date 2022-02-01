@@ -10,12 +10,26 @@ export const dogs = [
     {
         type: 'lab',
         color: 'black',
-        cuteness: 10,
+        cuteness: 9,
         image: 'lab.png',
     
     },
 
+    {
+        type: 'pug',
+        color: 'white',
+        cuteness: 1,
+        image: 'pug.png',
     
+    },
+
+    {
+        type: 'corgi',
+        color: 'brown',
+        cuteness: 8,
+        image: 'corgi.png',
+    
+    },
     
     
 ];

@@ -6,6 +6,9 @@ import { renderDogs } from './utils.js';
 import { planes } from './planes.js';
 import { renderPlanes } from './utils.js';
 
+import { sports } from './sports.js';
+import { renderSports } from './utils.js';
+
 
 const dogList = document.getElementById('dog');
 
@@ -25,6 +28,14 @@ const planeList = document.getElementById('plane');
 
   
 for (let plane of planes) {
-    const div = renderDogs(plane);
+    const div = renderPlanes(plane);
     planeList.append(div);
+}
+
+const sportList = document.getElementById('sport');
+
+  
+for (let sport of sports) {
+    const div = renderSports(sport);
+    sportList.append(div);
 }

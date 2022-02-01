@@ -9,6 +9,9 @@ import { renderPlanes } from './utils.js';
 import { sports } from './sports.js';
 import { renderSports } from './utils.js';
 
+import { cars } from './cars.js';
+import { renderCars } from './utils.js';
+
 
 const dogList = document.getElementById('dog');
 
@@ -38,4 +41,9 @@ const sportList = document.getElementById('sport');
 for (let sport of sports) {
     const div = renderSports(sport);
     sportList.append(div);
+}
+
+for (let car of cars) {
+    const div = renderCars(car);
+    carList.append(div);
 }

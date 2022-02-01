@@ -50,6 +50,20 @@ export function renderSports(sport) {
 }
 
 
+export function renderCars(car) {
+    const div = document.createElement('div');
+    div.classList.add('car');
+
+    const p = document.createElement('p');
+    p.textContent = `${car}`;
+    div.append(p);
+    return div;
+    
+}
+
+
+
+
 
 
 // export function renderPlanes(plane) {

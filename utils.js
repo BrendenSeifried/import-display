@@ -28,12 +28,12 @@ export function renderPlanes(plane) {
     div.append(h2);
     //image
     const img = document.createElement('img');
-    img.src = `./assets/${plane.image}`;
+    img.src = `./assets/${plane.stats.image}`;
    
 
     //p
     const p = document.createElement('p');
-    p.textContent = `The${plane.type} plane is a ${plane.size} size and its speed is  ${plane.speed}`;
+    p.textContent = `The${plane.type} plane is a ${plane.stats.size} size and its speed is  ${plane.stats.speed}`;
     div.append(h2, img, p);
     return div;
 }

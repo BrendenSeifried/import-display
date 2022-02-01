@@ -50,10 +50,10 @@ const planeList = document.getElementById('plane');
 
 // renderSports();
 
-// for (let plane of planes){ 
-//     const div = renderPlanes(plane);
-//     planeList.append(div);
-// }
+for (let plane of planes){ 
+    const div = renderPlanes(plane);
+    planeList.append(div);
+}
 
 const sportList = document.getElementById('sport');
 
@@ -65,8 +65,8 @@ for (let sport of sports) {
 
 
 
-for (let car of cars) {
-    const div = renderCar(car);
-    carList.append(div);
-}
+// for (let car of cars) {
+//     const div = renderCar(car);
+//     carList.append(div);
+// }
 

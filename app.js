@@ -41,10 +41,19 @@ renderAnimals();
 const planeList = document.getElementById('plane');
 
   
-for (let plane of planes){ 
-    const div = renderPlanes(plane);
-    planeList.append(div);
-}
+// function renderSports() {
+//     for (let sport of sports){
+//         const div = renderSports(sport);
+//         sportList.append(div);
+//     }
+// }
+
+// renderSports();
+
+// for (let plane of planes){ 
+//     const div = renderPlanes(plane);
+//     planeList.append(div);
+// }
 
 const sportList = document.getElementById('sport');
 
@@ -53,6 +62,8 @@ for (let sport of sports) {
     const div = renderSports(sport);
     sportList.append(div);
 }
+
+
 
 for (let car of cars) {
     const div = renderCar(car);

@@ -1,22 +1,17 @@
 export const cars = [
-    { 
-        make: 'Honda',
-        model: 'Civic',
-        type: 'sedan',
-        image: 'sedan.png',
+    {
+        make: 'Honda', 
+        stats: ['Civic', 'sedan', 'FWD'],
     },
 
-    { 
-        make: 'ford',
-        model: 'explorer',
-        type: 'suv',
-        image: 'suv.png'
+    {
+        make: 'Ford', 
+        stats: ['explorer', 'suv', 'AWD'],
     },
 
-    { 
-        make: 'dodge',
-        model: 'viper',
-        type: 'sport',
-        image: 'sportcar.png',
+    
+    {
+        make: 'Dodge', 
+        stats: ['viper', 'sport', 'RWD'],
     },
 ];

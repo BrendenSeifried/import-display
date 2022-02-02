@@ -15,6 +15,8 @@ import { renderCar } from './utils.js';
 
 const animalList = document.getElementById('animals');
 
+const carList = document.getElementById('car');
+
 function renderAnimals() {
     for (let item of animal){
         const div = renderAnimal(item);
@@ -64,9 +66,11 @@ for (let sport of sports) {
 }
 
 
-
-// for (let car of cars) {
-//     const div = renderCar(car);
-//     carList.append(div);
-// }
-
+function renderCars() { 
+    
+    for (let car of cars) {
+        const div = renderCar(car);
+        carList.append(div);
+    }
+}
+renderCars();

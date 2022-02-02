@@ -55,23 +55,23 @@ export function renderCar(car) {
     div.classList.add('car');
   
     const h2 = document.createElement('h2');
-    h2.textContent = car.type.toUpperCase();
+    h2.textContent = car.make.toUpperCase();
   
 
-    // const ul = createElement('ul');
-    // for (let car of cars) {
-    //     const li = document.createElement('li');
-    //     li.textContent = car;
-    //     ul.append(li);
-    // }
+    const ul = document.createElement('ul');
+    for (let stat of car.stats) {
+        const li = document.createElement('li');
+        li.textContent = stat;
+        ul.append(li);
+    }
 
-    const p = document.createElement('p');
-    p.textContent = car.make;
+    // const p = document.createElement('p');
+    // p.textContent = car.stats;
 
-    const img = document.createElement('img');
-    img.src = `./assets/${car.image}`;
+    //const img = document.createElement('img');
+    //img.src = `./assets/${car.image}`;
    
-    div.append(h2, p, img);
+    div.append(h2, ul);
     return div;
     
 }
